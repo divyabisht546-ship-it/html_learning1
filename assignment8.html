@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment8.html</title>
+</head>
+
+<body>
+    <!-- we are using html table =  representing the data in the tabular format -->
+    <!-- simple table -->
+    <h2>Simple Table</h2>
+    <!-- jaha jaha par data fill hoga waha waha par td likhna hoga upar wale mai bhi sahi krar dena -->
+
+    <!-- border dediyaa tr means row aur haeding means th-->
+    <h2>SIMPLE TABLE</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <th>abc</th>
+            <th>jaipur</th>
+        </tr>
+        <tr>
+            <th>def</th>
+            <th>vrindavan</th>
+        </tr>
+    </table>
+    <br><br>
+    <!-- table with border -->
+    <h2>Table with border</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <th>abc</th>
+            <th>jaipur</th>
+        </tr>
+        <tr>
+            <th>def</th>
+            <th>vrindavan</th>
+        </tr>
+    </table>
+    <br><br>
+    <h2>table with caption</h2>
+    <table border="1">
+        <caption>STUDENT TABLE</caption>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <th>abc</th>
+            <th>jaipur</th>
+        </tr>
+        <tr>
+            <th>def</th>
+            <th>vrindavan</th>
+        </tr>
+    </table>
+    <br><br>
+    <h2>table with colour</h2>
+    <table border="1" <caption>STUDENTTABLE</caption>
+        <!-- pure row pehh colour bgcolor not bgcolour-->
+        <tr bgcolor="lightbluishgreen">
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <!-- kisi particular -->
+            <th>abc</th>
+            <th bgcolor="lightgray">jaipur</th>
+        </tr>
+        <tr>
+            <th>def</th>
+            <th>vrindavan</th>
+        </tr>
+    </table>
+    <br><br>
+</body>
+
+
+<!-- jaha jaha par data fill hoga waha waha par td likhna hoga upar wale mai bhi sahi krar dena -->
+<h2>Colspan example</h2>
+<table border="1">
+    <caption>STUDENT TABLE</caption>
+    <!-- pure row pehh colour bgcolor not bgcolour-->
+    <tr>
+        <th colspan="2">FULL NAME</th>
+    </tr>
+
+    <tr>
+        <th>FIRST NAME</th>
+        <th>LAST NAME</th>
+    </tr>
+
+    <tr>
+        <td>DIVYA </td>
+        <td>BISHT</td>
+    </tr>
+    <tr>
+        <td>KAJAL </td>
+        <td>BISHT</td>
+    </tr>
+
+</table>
+
+<br><br>
+<h2>rowspan example</h2>
+<table border="1">
+    <!-- pure row pehh colour bgcolor not bgcolour-->
+    <tr>
+        <th>name</th>
+        <th>subject</th>
+    </tr>
+
+    <tr>
+        <th rowspan="2">ankush</th>
+        <td>science</td>
+    </tr>
+
+    <tr>
+       <td>maths</td>
+    </tr>
+    </table>
+    <br><br>
+<!-- structured table for making heading in this we will use thead-->
+ <h2>STRUCTURED TABLE</h2>
+<table border="'1">
+<thead>
+<tr>
+    <th>PRODUCT</th>
+    <th>PRICE</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+        <td>LAPTOP</td>
+        <td>67000</td>
+    </tr>
+      <tr>
+        <td>LAPTOP</td>
+        <td>89000</td>
+    </tr>
+</tbody>
+<!-- footer used for storing nichee ki value -->
+<tfoot>
+    <tr>
+        <td>Total</td>
+        <td>180000</td>
+    </tr>
+</tfoot>
+</table>
+<br><br>
+<!-- table size -->
+   <h2>SIMPLE TABLE</h2>
+    <table border="1" width ="50%" height="150">
+        <tr>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <th>abc</th>
+        </tr>
+    </table>
+    <br><br>
+    <!-- cellpadding and cellspacing -->
+<h2>SIZE TABLE</h2>
+<!-- cellpadding hamara andar ka space hota haii aur cellspacing hota haii bahar ka jo spaace haii-->
+    <table border="1"cellpading="110" cellspacing="15">
+        <tr>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <th>abc</th>
+        </tr>
+    </table>
+    <br><br>
+    <h2>10. Table with image</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>photo</th>
+        </tr>
+<tr>
+    <td>We</td>
+    <td>
+        <img src="https://www.google.com/" alt="we">
+    </td>
+</tr>
+
+    </table>
+</html>

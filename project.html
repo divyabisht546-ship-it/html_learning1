@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head class="header">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project.html</title>
+        <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+<div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT19NsV4pXehl3chq3t36oTXXOWjWF2o3eacQTq9MUv5uuG20XzsJKnngBi&s=10" alt="logo" height="50" width="50">
+        <!-- yehh hamara logo ke baad aayega isse -->
+<span class="logo-text">LEARN CODING</span>
+</div>
+    <nav class="navbar" id="navbar">
+        <!-- a*4 used for how many anchor tags you want new line added usse format aara haii 
+         navigation has this alignsection not need any css-->
+         <!-- here what i have done is cretaed a file and give its reference here -->
+<a href="./About.html" class="nav-link" >About</a> |
+<a href="" class="nav-link">Contact</a> |
+<a href="" class="nav-link">Media</a> |
+<!-- 2 class ek hi ""iske andar hungi -->
+<a href="login.html" class="nav-link login-btn">Login</a>
+    </nav>
+     </header>
+     <!-- navbar(for small mobile devices only) -->
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+      <br><br>
+<!-- hero section code -->
+ <!-- div ne hamara left part ek unit maii kiyaa -->
+ <section class="container hero ">
+    <div class="hero-text">
+<!-- left part -->
+ <h1 class="hero-title">WELCOME TO OUR MISSION</h1>
+ <p class="section-para">
+Learn, practice, and improve your coding skills with us.
+Explore HTML, CSS, JavaScript, and more through simple lessons, examples, and hands-on practice.
+
+Start learning today and build something amazing! 🚀
+ </p>
+ <br><br>
+ <h1 class="section-title">OUR MISSION</h1>
+ <p class="section-para">Our mission is to make coding simple, accessible, and enjoyable for everyone. We aim to help learners build strong programming skills through easy explanations, practical examples, and hands-on practice.
+
+We believe that everyone can learn to code with the right guidance, consistency, and practice. 🚀</p>
+</div>
+<!--  right part-->
+  <div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8YvVD20HgcujureyAXpDS45C2wUpXrA9xnV1DbaNglkX0JkVWA-eDMJg&s=10">
+  <span class="t">FIGURE COMPUTER</span>
+ </section>
+    <br>
+    <br><br>
+    <br>
+    <br><br><br>
+    <hr>
+    </div>
+    <!-- testinomial card -->
+<section class="section-test">
+<h2 class="heading">WHAT OUR STUDENT SAY</h2>
+<div class="container">
+<div class="card">
+<p> “Absolutely loved the experience! The website is 
+    simple, clean, and very easy to use. Highly recommended!”</p>
+    <h3>akhilesh</h3>
+    </div>
+    <div  class="card" >
+<p>“Great service and a very user-friendly design. 
+    Everything was well organized and easy to understand.”</p>
+    <h3>ahsdsj</h3>
+    </div>
+    <div  class="card">
+<p>“I had a wonderful experience using this platform. 
+    It made everything much easier and saved a lot of time.”</p>
+    <h3>kajal</h3>
+</div>
+<div  class="card">
+<p>“Really impressed with the quality and overall experience. 
+    The interface looks modern and works smoothly.”</p>
+    <h3>shyam</h3>
+    </div>
+    <div  class="card">
+<p>“Excellent work! The concept is really useful and the website is designed beautifully.
+     I would definitely recommend it to others.”</p>
+     <h3>krishu</h3>
+</div>
+</div>
+</setion>
+    <!-- for center alignment -->
+     <br>
+     <br>
+    <footer class="footer">
+            <p>@2026 | All Rights Reserved</p>
+    </footer>
+    <script>
+//hamburger logic
+const hamburger=document.getElementById("hamburger")
+const navbar=document.getElementById("navbar")
+hamburger.addEventListener("click",()=>{
+    navbar.classList.toggle("active")
+    hamburger.classList.toggle("open")
+})
+    //scrollbar logic  
+    const header=document.getElementById("header")  
+        window.addEventListener("scroll",()=>{
+            if(window.scrollY>20){
+header.classList.add("scrolled");
+            }
+            else{
+                header.classList.remove("scrolled");
+            }
+        })
+    </script>
+</body>
+
+
+</html>

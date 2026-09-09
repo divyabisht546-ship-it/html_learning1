@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML Multimedia - Audio & Video</h1>
+    <h2>1. Simple Audio</h2>
+    <audio src="./audio.mp3" controls></audio>
+    <!-- yehh autoplay mode mai rahega lekin filhaal hamneisse muted kiya haii -->
+    <h2>2.Autoplay Audio</h2>
+    <audio src="audio.mp3" autoplay muted controls></audio>
+    <!-- mere usme audio nahi chalra haii but chalta toh loop mai work karta -->
+    <h2>2.Loop Audio</h2>
+    <audio src="audio.mp3" loop controls></audio>
+    <!-- video option -->
+    <h2>1. Simple Video</h2>
+    <video src="./pasteyourvideolink" controls></video>
+    <h2>1. Autoplay Video</h2>
+    <video src="./pasteyourvideolink" autoplay muted controls></video>
+    <h2>1. Loop Video</h2>
+    <video src="./pasteyourvideolink" loop controls></video>
+    <!-- agar tum chahte hoo youtube video mai thumbnail dikhana toh aisa karo kuch 
+     ki poster mai photo daalo jo tum chahte hoo -->
+    <h2>1.Video with thumbnail</h2>
+    <video src="./pasteyourvideolink" poster="./pastethethumbnail" controls></video>
+    <!-- apni video ko embedded karne ke liye -->
+    <h2>1.embeded video</h2>
+    <!-- iframe is used to embeed (external content dikhaane ke liye bhi used hota haii yeh)-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0HyIda5eub8?si=XwDJPdGipkhSUs-w"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

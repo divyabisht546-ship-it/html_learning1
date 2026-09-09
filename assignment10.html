@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- html canva is used to design 2-d 3-d figure ,images,edit images -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment10.html</title>
+</head>
+<body>
+
+    <canvas id="piechart" width="300" height="400"></canvas>
+<!-- this is javascript used inside script -->
+    <script>
+        var c = document.getElementById("piechart");
+        var ctx = c.getContext("2d");
+        
+        var centerX = 150;
+        var centerY = 150;
+        var radius = 100;
+
+        // Function to draw slice and label
+        function drawSlice(start, end, colour, label) {
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.arc(centerX, centerY, radius, start, end);
+            ctx.fillStyle = colour;
+            ctx.fill();
+
+            // Calculate middle angle for label placement
+            var midAngle = (start + end) / 2;
+            var labelX = centerX + Math.cos(midAngle) * (radius / 1.5);
+            var labelY = centerY + Math.sin(midAngle) * (radius / 1.5);
+
+            ctx.fillStyle = "white"; // Set text color (white works well over dark slices)
+            ctx.font = "14px Arial";
+            ctx.fillText(label, labelX - 25, labelY);
+        }
+
+        // Draw slices:
+        // 1. Green slice (50% = 0 to PI radians)
+        drawSlice(0, Math.PI, "green", "Green 50%");
+
+        // 2. Red slice (25% = PI to 1.5 * PI radians)
+        drawSlice(Math.PI, 1.5 * Math.PI, "red", "Red 25%");
+
+        // 3. Blue slice (25% = 1.5 * PI to 2 * PI radians)
+        drawSlice(1.5 * Math.PI, 2 * Math.PI, "blue", "Blue 25%");
+    </script>
+</body>
+</html>
